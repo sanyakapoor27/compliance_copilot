@@ -16,7 +16,7 @@ st.markdown(
     """
 )
 
-FASTAPI_URL = "http://localhost:8000/generate_explanation"
+FASTAPI_URL = "https://compliance-copilot.onrender.com/generate_explanation"
 
 sample_input_json = {
   "document_type": "AADHAAR_FRONT",

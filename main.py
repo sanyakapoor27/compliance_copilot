@@ -36,11 +36,11 @@ async def generate_explanation(request_body: RawJsonInput = Body(...)):
         **CRITICAL WRITING RULES**:
         The explanation should be tailored for end-users or support teams and must:
         - Start with a concise summary of the overall verification status.
-        - Use bullet points to list specific issues.
+        - Use 3-5 bullet points to list specific issues.
         - Translate technical terms (e.g., "selfie_image_score", "template_match", "edge_noise") into easy-to-understand language.
         - Clearly state what the user can do to fix each issue.
         - Maintain a helpful and professional simple tone.
-        - Be short and concise wwhile writing bullet points.
+        - Be short and concise while writing bullet points.
         - If all checks pass, state that the verification was successful.
 
         Here is the structured compliance data:
