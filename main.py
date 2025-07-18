@@ -33,6 +33,10 @@ async def generate_explanation(request_body: RawJsonInput = Body(...)):
         prompt = f"""
         You are a Compliance Copilot for Digio. Your task is to analyze structured ID verification results in JSON format and generate a clear, accurate, and actionable natural language explanation.
 
+        **CRITICAL ANALYSIS RULES**:
+        - User should always be 18 or older for verification. Violating this leads to age check failure.
+        - Unmasked numbers violate compliance norms.
+        
         **CRITICAL WRITING RULES**:
         The explanation should be tailored for end-users or support teams and must:
         - Start with a concise summary of the overall verification status.
